@@ -13,7 +13,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 @Component
 @RequiredArgsConstructor
-public class ChannelCache implements AutoCloseable {
+public class ChannelPerThreadCache implements AutoCloseable {
     private final Connection connection;
     private final Map<Thread, Channel> channels = new ConcurrentHashMap<>();
 

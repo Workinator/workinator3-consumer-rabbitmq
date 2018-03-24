@@ -1,5 +1,7 @@
-package com.allardworks.workinator3.consumer.rabbitmq;
+package com.allardworks.workinator3.consumer.rabbitmq.testsupport;
 
+import com.allardworks.workinator3.consumer.rabbitmq.PartitionQueue;
+import com.allardworks.workinator3.consumer.rabbitmq.QueueResolver;
 import com.allardworks.workinator3.contracts.Assignment;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;

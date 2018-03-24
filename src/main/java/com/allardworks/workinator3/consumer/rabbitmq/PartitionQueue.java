@@ -15,4 +15,8 @@ public class PartitionQueue {
      * Used when creating the queue and binding it to the exchange.
      */
     private String routingKey;
+
+    private String exchangeName;
+
+    private String exchangeType;
 }
