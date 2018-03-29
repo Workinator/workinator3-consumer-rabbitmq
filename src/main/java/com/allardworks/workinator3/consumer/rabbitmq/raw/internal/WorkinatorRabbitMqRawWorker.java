@@ -1,8 +1,8 @@
 package com.allardworks.workinator3.consumer.rabbitmq.raw.internal;
 
+import com.allardworks.workinator3.consumer.AsyncWorker;
+import com.allardworks.workinator3.consumer.WorkerContext;
 import com.allardworks.workinator3.consumer.rabbitmq.raw.RabbitMqRawWorker;
-import com.allardworks.workinator3.contracts.AsyncWorker;
-import com.allardworks.workinator3.contracts.WorkerContext;
 import com.rabbitmq.client.Channel;
 import lombok.RequiredArgsConstructor;
 

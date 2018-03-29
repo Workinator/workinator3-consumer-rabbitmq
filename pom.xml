@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.allardworks.workinator3</groupId>
-	<artifactId>consumer-rabbitmq</artifactId>
+	<artifactId>workinator3-consumer-rabbitmq</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -42,7 +42,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.allardworks.workinator3</groupId>
-			<artifactId>workinator3</artifactId>
+			<artifactId>workinator3-consumer</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
         <!-- https://mvnrepository.com/artifact/com.rabbitmq/amqp-client -->
@@ -52,15 +52,4 @@
             <version>5.2.0</version>
         </dependency>
     </dependencies>
-
-	<!--
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
-	-->
 </project>

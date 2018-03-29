@@ -2,7 +2,7 @@ package com.allardworks.workinator3.consumer.rabbitmq.testsupport;
 
 import com.allardworks.workinator3.consumer.rabbitmq.raw.RabbitMqRawWorker;
 import com.allardworks.workinator3.consumer.rabbitmq.raw.RabbitMqRawWorkerFactory;
-import com.allardworks.workinator3.contracts.Assignment;
+import com.allardworks.workinator3.core.Assignment;
 import org.springframework.stereotype.Component;
 
 @Component

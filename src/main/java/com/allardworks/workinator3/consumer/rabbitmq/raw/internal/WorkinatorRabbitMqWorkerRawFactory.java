@@ -1,12 +1,13 @@
 package com.allardworks.workinator3.consumer.rabbitmq.raw.internal;
 
+import com.allardworks.workinator3.consumer.AsyncWorker;
+import com.allardworks.workinator3.consumer.AsyncWorkerFactory;
 import com.allardworks.workinator3.consumer.rabbitmq.ChannelPerThreadCache;
 import com.allardworks.workinator3.consumer.rabbitmq.PartitionQueue;
 import com.allardworks.workinator3.consumer.rabbitmq.QueueResolver;
 import com.allardworks.workinator3.consumer.rabbitmq.RabbitMqOptions;
 import com.allardworks.workinator3.consumer.rabbitmq.raw.RabbitMqRawWorkerFactory;
-import com.allardworks.workinator3.contracts.Assignment;
-import com.allardworks.workinator3.contracts.AsyncWorker;
+import com.allardworks.workinator3.core.Assignment;
 import com.rabbitmq.client.Connection;
 import lombok.NonNull;
 import lombok.val;
@@ -18,7 +19,7 @@ import java.util.concurrent.TimeoutException;
 
 @Component
 @Primary
-public class WorkinatorRabbitMqWorkerRawFactory implements com.allardworks.workinator3.contracts.AsyncWorkerFactory {
+public class WorkinatorRabbitMqWorkerRawFactory implements AsyncWorkerFactory {
     /**
      * Queue resolver is provide by the application.
      * The resolver instructs workinator on which queue to listen to.

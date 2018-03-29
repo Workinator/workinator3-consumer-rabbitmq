@@ -2,10 +2,10 @@ package com.allardworks.workinator3.consumer.rabbitmq;
 
 import com.allardworks.workinator3.consumer.rabbitmq.raw.internal.WorkinatorRabbitMqWorkerRawFactory;
 import com.allardworks.workinator3.consumer.rabbitmq.testsupport.DummyQueueResolver;
-import com.allardworks.workinator3.contracts.Assignment;
-import com.allardworks.workinator3.contracts.ConsumerId;
-import com.allardworks.workinator3.contracts.ConsumerRegistration;
-import com.allardworks.workinator3.contracts.WorkerId;
+import com.allardworks.workinator3.core.Assignment;
+import com.allardworks.workinator3.core.ConsumerId;
+import com.allardworks.workinator3.core.ConsumerRegistration;
+import com.allardworks.workinator3.core.WorkerId;
 import com.rabbitmq.client.ConnectionFactory;
 import lombok.val;
 import org.junit.Test;
